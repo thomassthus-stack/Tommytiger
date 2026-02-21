@@ -1,5 +1,0 @@
-backend/
-  main.py
-  requirements.txt
-  .env.example
-  README.md
