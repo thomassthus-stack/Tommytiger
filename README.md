@@ -1,22 +1,33 @@
 # Analysis Backend
 
-FastAPI-basert backend for filanalyse med LLM-generert Python-kode.
+En enkel FastAPI‑backend som tar imot en CSV/Excel‑fil og en tekstprompt, genererer Python‑analyse via LLM og returnerer:
+
+- tekstlig analyse  
+- tabeller  
+- grafbeskrivelser  
+
+Backend er laget for å kjøre på DigitalOcean App Platform.
+
+---
 
 ## Endepunkter
 
-### `POST /run_analysis`
+### POST /run_analysis
 Tar imot:
-- `prompt`: tekst
-- `file`: CSV eller Excel
+- `prompt` (tekst)
+- `file` (CSV eller Excel)
 
 Returnerer:
-- tekstlig analyse
-- tabeller
-- grafbeskrivelser
+- `text`
+- `tables`
+- `charts`
 
-### `GET /health`
+### GET /health
 Sjekker om backend kjører.
 
+---
+
 ## Miljøvariabler
-Sett i DigitalOcean:
+
+Sett i DigitalOcean App Platform:
 
