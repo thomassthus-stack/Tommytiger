@@ -20,3 +20,20 @@ Health check.
 
 ```json
 { "status": "ok" }
+{
+  "text": "Analysis based on prompt...",
+  "tables": [
+    {
+      "name": "Head of dataset",
+      "data": [
+        { "col1": 1, "col2": 2 }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "title": "Placeholder chart",
+      "description": "Chart generation can be added later."
+    }
+  ]
+}
